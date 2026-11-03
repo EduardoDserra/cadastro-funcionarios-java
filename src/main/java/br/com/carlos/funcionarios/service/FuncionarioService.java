@@ -7,10 +7,20 @@ import java.math.RoundingMode;
 import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Objects;
 
 public class FuncionarioService {
 
-    private final FuncionarioDAO funcionarioDAO = new FuncionarioDAO();
+    private final FuncionarioDAO funcionarioDAO;
+
+    public FuncionarioService() {
+        this(new FuncionarioDAO());
+    }
+
+    public FuncionarioService(FuncionarioDAO funcionarioDAO) {
+        this.funcionarioDAO = Objects.requireNonNull(
+                funcionarioDAO, "O DAO deve ser informado.");
+    }
 
     public void cadastrar(String nome, LocalDate dataAdmissao,
             BigDecimal salario, boolean status) throws SQLException {
