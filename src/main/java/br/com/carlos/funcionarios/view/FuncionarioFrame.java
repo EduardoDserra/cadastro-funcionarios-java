@@ -250,7 +250,7 @@ public class FuncionarioFrame extends javax.swing.JFrame {
         lblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         lblTitulo.setText("Funcionários");
 
-        lblSubtitulo.setText("Cadastre e gerence os funcionários.");
+        lblSubtitulo.setText("Cadastre e gerencie os funcionários.");
 
         lblLista.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblLista.setText("Funcionários cadastrados");
