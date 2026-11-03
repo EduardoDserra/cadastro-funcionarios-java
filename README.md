@@ -215,13 +215,6 @@ BUILD SUCCESS
 
 Os testes unitários cobrem a geração de hash e o serviço de funcionários. As consultas SQL e a interação com as telas não fazem parte dessa suíte.
 
-## Senhas e persistência
-
-O SHA-256 foi utilizado conforme solicitado no enunciado. Trata-se de uma função de hash, sem recuperação da senha original.
-
-Para uso em produção, o armazenamento de senhas deve utilizar uma solução específica, como Argon2id, bcrypt ou PBKDF2, com salt e parâmetros adequados.
-
-As operações SQL utilizam PreparedStatement e os recursos JDBC são fechados com try-with-resources.
 
 ## Autor
 
